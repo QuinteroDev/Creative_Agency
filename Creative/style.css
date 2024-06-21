@@ -1,0 +1,126 @@
+:root {
+    --primary-font: 'Poppins', sans-serif;
+    --white: #fff;
+    --blue: #515DEF;
+    --max-width-page: 1400px;
+ }
+
+ html {
+    background-color: var(--blue);
+ }
+
+ body {
+    margin:0;
+    padding: 0;
+    font-family: var(--primary-font);
+    background-image: url("/img/group.jpg");
+    background-position: top right -30px;
+    background-size: 800px;
+    background-repeat: no-repeat;
+ }
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: var(--max-width-page);
+    padding-left: 16px;
+    padding-right: 16px;
+    box-sizing: border-box;
+}
+
+header.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+    margin-bottom: 100px;
+
+}
+
+.navPrincipal ul {
+    padding: 0;
+    margin: 0 0 0 -450px;
+    list-style: none;
+    display: flex;
+    gap:70px;
+}
+.navPrincipal a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.Contact ul {
+    padding: 0;
+    margin: 0;
+    list-style: none; 
+}
+
+.Contact ul a{
+    text-decoration: none;
+    color: var(--white);
+    background-color: var(--blue);
+    padding: 16px 24px;
+}
+
+.hero {
+  max-width: 700px;
+}
+
+.hero p {
+   color: var(--white);
+    font-size: 24px;
+    margin: 0;
+}
+
+.hero h1 {
+    color: var(--white);
+    font-size: 64px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.75); /* Ajusta los valores según sea necesario */
+    margin-top: 30px;
+    margin-bottom:30px;
+}
+
+.button ul {
+    list-style: none;
+    padding: 0;
+    margin-top:40px;
+}
+
+.button ul li{
+    color: black;
+    font-size: 18px;
+}
+
+.button ul li a{
+    background-color: var(--white);
+    padding:14px 16px;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+.button ul li a::after {
+    content: url('img/Arrow.svg');
+    display: inline-block;
+    margin-left: 10px; 
+    vertical-align: middle;
+    margin-top: 5px; 
+}
+
+.features {
+    display: flex;
+    gap: 50px;
+    margin-top: 100px;
+    background-color: var(--white);
+    height: 300px;
+    max-width: 1250px;
+}
+
+.features article {
+    padding: 30px;
+}
+
+.features article:nth-child(1){
+    margin-left: 150px;
+}
+
